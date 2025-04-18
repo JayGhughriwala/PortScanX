@@ -17,8 +17,7 @@ PortScanX is an advanced, fast, and configurable command-line tool for performin
 - 📊 **Service Summary Output**
 - 💾 **Save Results to Text or JSON Files**
 - 🧠 **Smart CLI using argparse**
-- ✅ Pure Python (no third-party libraries required)
-
+- ✅ Pure Python 
 ---
 
 ## 📦 Installation
