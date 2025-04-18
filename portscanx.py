@@ -1,25 +1,26 @@
-# PortScanX :  An Advanced CLI Port Scanner ( still in development not useful much )
+# PortScanX:  An Advanced CLI Port Scanner ( still in development, not useful much )
 #  -----------------------------------
 #  -----------------------------------
-# Please use it on your own consequences
-# This is a multi threaded port scanner that check for open
-# TCP Ports on a target IP or domain , with optional banner grabbing
-# It supports different port scanning profiles , output formats
+# Please use it at your own risk
+# This is a multi-threaded port scanner that checks for open
+# TCP Ports on a target IP or domain, with optional banner grabbing
+# It supports different port scanning profiles, output formats
 #  summarize by service types
+# It's mainly for running on Linux, not supported on Windows, and requires some changes.
 
-import argparse # for parsing command line argumanets
+import argparse # for parsing command line arguments
 import socket # for networking operations to connect with ports
-import threading # for concurrency multi threadding
+import threading # for concurrency, multi-threading
 import json # for saving results in JSON format if you want
-import os # for file sytstem operations and other
+import os # for file system operations and other
 import time # for measuring time
-import ipaddress # for ip validation and hostname to IP 
+import ipaddress # for IP validation and hostname to IP 
 import platform # to detect OS ( for pinging)
 import subprocess # to execute shell commands (ping)
 import re # for banner regex parsing
 import signal # 
 import sys # for reading user input keypress
-import termios # for unix terminal input 
+import termios # for Unix terminal input 
 import tty # for raw terminal input 
 from queue import Queue # therad safe queue for port distribution
 # if os.name == 'nt':
@@ -33,7 +34,7 @@ from queue import Queue # therad safe queue for port distribution
 PORT_PROFILES = {
     "web": [80, 443, 8080, 8443], # common
     "common": [21, 22, 23, 25, 53, 80, 110, 135, 139, 143, 443, 445, 587, 993, 995, 3306, 3389, 8080],
-    "full": list(range(1, 65536)) # all possibl tcp ports
+    "full": list(range(1, 65536)) # all possible tcp ports
 }
 
 # Map common ports to service types (for summary)
