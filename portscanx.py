@@ -1,7 +1,7 @@
 # PortScanX :  An Advanced CLI Port Scanner ( still in development not useful much )
 #  -----------------------------------
 #  -----------------------------------
-# Please use it oon your own consequences
+# Please use it on your own consequences
 # This is a multi threaded port scanner that check for open
 # TCP Ports on a target IP or domain , with optional banner grabbing
 # It supports different port scanning profiles , output formats
