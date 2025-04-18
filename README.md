@@ -4,8 +4,8 @@
 
 PortScanX is an advanced, fast, and configurable command-line tool for performing network port scanning and basic service enumeration. It supports banner grabbing, customizable scan profiles, multi-threading, and outputs in human-readable and JSON formats.
 
-> ⚠️ Use responsibly. Only scan hosts you have permission to test.
-
+> ⚠️ Use responsibly at your own risk . Only scan hosts you have permission to test.
+> ⚒️ Still in Development Phase, some functionality not working properly.
 ---
 
 ## 🚀 Features
