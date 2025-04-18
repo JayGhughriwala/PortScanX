@@ -1,4 +1,4 @@
-# PortScanX:  An Advanced CLI Port Scanner ( still in development, not useful much )
+# PortScanX:  An Advanced CLI Port Scanner ( still in development, but you can use , adding more features soon )
 #  -----------------------------------
 #  -----------------------------------
 # Please use it at your own risk
